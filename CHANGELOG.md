@@ -1,23 +1,36 @@
 # CHANGELOG
 
-## v1.0 — 27/10/2026
+## v1.0 — Website portfolio
+
+### Nội dung
+
+- Ra mắt website portfolio cá nhân giới thiệu Lục Mạnh Tôn và vai trò Frontend Developer.
+- Cung cấp các khu vực Giới thiệu, Kỹ năng, Dự án và Liên hệ.
+- Thêm ảnh đại diện, ảnh minh họa dự án và liên kết đến email, GitHub, Facebook.
+- Sử dụng HTML5/CSS3, Flexbox, CSS Grid và media query cho desktop, tablet và mobile.
 
 ### Chức năng mới
 
-- Ra mắt website portfolio cá nhân giới thiệu Lục Mạnh Tôn và vai trò Frontend Developer.
-- Thêm các mục Giới thiệu, Kỹ năng, Dự án và Liên hệ cùng điều hướng nhanh.
-- Hiển thị ảnh đại diện, ảnh minh họa và các dự án mẫu.
-- Thiết kế giao diện responsive cho điện thoại, máy tính bảng và máy tính để bàn.
-- Hỗ trợ điều hướng bằng bàn phím, `focus-visible` và tùy chọn giảm chuyển động.
-- Có thể chạy trang tĩnh trực tiếp trên trình duyệt, bằng máy chủ thử nghiệm Python hoặc Docker với Nginx.
+- Điều hướng neo mượt giữa các khu vực của trang.
+- Giao diện responsive cho mobile, tablet và desktop.
+- Hỗ trợ `:focus-visible` và `prefers-reduced-motion`.
+- Kiểm tra cơ bản của biểu mẫu bằng thuộc tính HTML native.
+- Có thể chạy trực tiếp qua trình duyệt, máy chủ Python hoặc container Nginx.
 
 ### Lỗi đã sửa
 
-- Sửa đường dẫn ảnh để ảnh hiển thị đúng.
+- Tách CSS thành `assets/css/styles.css`.
+- Sử dụng đường dẫn tài nguyên tương đối để tải ảnh và CSS đúng trong trang tĩnh.
 
 ### Hạn chế còn tồn tại
 
-- Biểu mẫu liên hệ mới có giao diện; chưa có backend hoặc dịch vụ gửi email để tiếp nhận nội dung.
-- Một số liên kết dự án vẫn là liên kết mẫu và cần được thay bằng URL thực tế.
-- Nội dung portfolio và các dự án mẫu cần được cập nhật theo thông tin thực tế trước khi sử dụng chính thức.
-- Đây là website tĩnh, chưa có chức năng động hoặc quy trình biên dịch.
+- Biểu mẫu liên hệ chỉ có giao diện; chưa có backend hoặc dịch vụ nhận dữ liệu.
+- Bốn liên kết “Xem chi tiết” vẫn là placeholder `href="#"`.
+- Nội dung và ảnh dự án chưa được xác nhận là dữ liệu thực tế.
+- Trang không có JavaScript, quy trình build hoặc công cụ kiểm thử tự động.
+
+## Cập nhật tài liệu — 25/11/2026
+
+- Đồng bộ README với cấu trúc và trạng thái thực tế của dự án.
+- Bổ sung tài liệu cấu trúc thư mục, chạy thử, triển khai và giới hạn tính năng.
+- Cập nhật báo cáo kiểm thử theo đúng biểu mẫu, liên kết dự án và môi trường đã kiểm tra.

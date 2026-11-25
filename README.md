@@ -2,20 +2,32 @@
 
 ## Mô tả
 
-Website portfolio cá nhân giới thiệu Lục Mạnh Tôn và định hướng Frontend Developer. Trang gồm phần giới thiệu, kỹ năng, các dự án tiêu biểu và thông tin liên hệ. Dự án được xây dựng bằng HTML và CSS tĩnh, không cần backend.
+Website portfolio cá nhân giới thiệu Lục Mạnh Tôn theo vai trò Frontend Developer.
+Trang là tài liệu HTML/CSS tĩnh, gồm các phần giới thiệu, kỹ năng, dự án tiêu biểu,
+liên hệ và điều hướng quay lại đầu trang. Dự án không sử dụng JavaScript, framework,
+backend hay quy trình build.
 
 ## Chức năng
 
-- Điều hướng đến các mục Giới thiệu, Kỹ năng, Dự án và Liên hệ.
-- Hiển thị thông tin cá nhân và các kỹ năng.
-- Trình bày dự án dưới dạng các thẻ.
-- Cung cấp liên kết email, GitHub và Facebook.
-- Có liên kết quay lại đầu trang.
+- Điều hướng neo đến Giới thiệu, Kỹ năng, Dự án và Liên hệ.
+- Hiển thị kỹ năng bằng danh sách thẻ.
+- Trình bày dự án bằng lưới responsive.
+- Kiểm tra dữ liệu cơ bản trong biểu mẫu bằng thuộc tính HTML `required` và `type="email"`.
+- Hỗ trợ bàn phím qua kiểu `:focus-visible` và giảm chuyển động qua `prefers-reduced-motion`.
+
+## Trạng thái
+
+- Trang đã sẵn sàng để xem và triển khai dưới dạng nội dung tĩnh.
+- Bốn liên kết dự án vẫn dùng `href="#"` và cần thay bằng URL dự án thực tế.
+- Biểu mẫu liên hệ chỉ có giao diện và kiểm tra phía trình duyệt; chưa được kết nối
+  backend, dịch vụ email hoặc API nhận dữ liệu.
+- Nội dung giới thiệu, dự án và hình ảnh placeholder cần được thay bằng thông tin thực tế
+  trước khi sử dụng chính thức.
 
 ## Công nghệ
 
 - HTML5
-- CSS3
+- CSS3 với Flexbox và CSS Grid
 - Docker và Nginx (tùy chọn để chạy thử)
 
 ## Yêu cầu môi trường
@@ -30,18 +42,25 @@ Website portfolio cá nhân giới thiệu Lục Mạnh Tôn và định hướn
 ```text
 .
 ├── index.html
-└── assets
-	├── css
-	│   └── styles.css
-	└── img
-		├── avatar.jpg
-		├── img1.jpg
-		├── img2.jpg
-		├── img3.jpg
-		└── img4.jpg
+├── assets/
+│   ├── css/
+│   │   └── styles.css
+│   └── img/
+│       ├── avatar.jpg
+│       ├── img1.jpg
+│       ├── img2.jpg
+│       ├── img3.jpg
+│       └── img4.jpg
+├── docs/
+│   ├── test_report.md
+│   └── screenshots/
+│       ├── 01-desktop.png
+│       └── 02-mobile.png
+├── README.md
+└── CHANGELOG.md
 ```
 
-Đảm bảo các tệp CSS và hình ảnh tồn tại đúng vị trí để trang hiển thị đầy đủ.
+Giữ nguyên cấu trúc tương đối để các liên kết CSS, ảnh và tài liệu hoạt động đúng.
 
 ## Cài đặt
 
@@ -55,7 +74,8 @@ Dự án không cần cài đặt thư viện hoặc chạy lệnh build.
 
 - Tệp CSS được liên kết tại `assets/css/styles.css`.
 - Hình ảnh được tham chiếu trong thư mục `assets/img/`.
-- Có thể thay đổi nội dung, thông tin liên hệ và đường dẫn ảnh trong `index.html`.
+- Nội dung trang và đường dẫn liên hệ có thể chỉnh trong `index.html`.
+- URL Facebook, GitHub và email hiện được lấy từ thông tin liên hệ của trang.
 - Không cần tệp cấu hình môi trường hoặc khóa API.
 
 ## Chạy thử
@@ -115,6 +135,12 @@ Mở <http://localhost:8080> để xem trang. Dừng và xóa container bằng l
 ```bash
 docker rm -f portfolio
 ```
+
+## Tài liệu kiểm thử
+
+- Báo cáo kết quả: [docs/test_report.md](docs/test_report.md)
+- Ảnh desktop: [docs/screenshots/01-desktop.png](docs/screenshots/01-desktop.png)
+- Ảnh mobile: [docs/screenshots/02-mobile.png](docs/screenshots/02-mobile.png)
 
 ## Thông tin liên hệ
 

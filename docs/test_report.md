@@ -1,6 +1,6 @@
 # Báo cáo kiểm thử — Portfolio CV
 
-**Ngày kiểm thử:** 27/10/2026  
+**Ngày kiểm thử:** 25/11/2026
 **Đối tượng:** Website portfolio tĩnh trong `index.html`  
 **Môi trường:** Microsoft Edge (Chromium), mở trang từ tệp cục bộ; desktop 1440 px và mobile 390 × 844 px.
 
@@ -11,7 +11,7 @@
 | Tính đúng đắn | Đạt có điều kiện | Nội dung, điều hướng neo, ảnh và xác thực cơ bản của biểu mẫu hoạt động; liên kết dự án vẫn là placeholder. |
 | UI/UX | Cần cải thiện | Bố cục desktop hiển thị tốt; ảnh mobile ghi nhận nội dung hero bị cắt ở mép phải. |
 | Khả năng vận hành - xử lý lỗi | Đạt một phần | Trang tĩnh mở được; trình duyệt kiểm tra trường bắt buộc và email, nhưng không có xử lý/gửi biểu mẫu phía máy chủ. |
-| Bảo mật | Đạt trong phạm vi website tĩnh | Không thấy mã JavaScript, backend hoặc thư viện bên ngoài; chưa thực hiện kiểm thử xâm nhập hay đánh giá cấu hình máy chủ. |
+| Bảo mật | Đạt trong phạm vi website tĩnh | Không thấy JavaScript, backend hoặc thư viện bên ngoài; chưa thực hiện kiểm thử xâm nhập hay đánh giá cấu hình máy chủ. |
 | Chất lượng mã nguồn | Đạt cơ bản | HTML có cấu trúc ngữ nghĩa, CSS tách riêng; chưa có bộ kiểm thử tự động và còn liên kết mẫu. |
 | Khả năng triển khai | Đạt cho nội dung tĩnh; Docker chưa xác minh | Trang và tài nguyên mở được từ tệp cục bộ; hướng dẫn Nginx/Docker có trong README nhưng môi trường kiểm thử không có Docker CLI. |
 
@@ -29,7 +29,7 @@
 
 - Ở desktop 1440 px, phần dự án hiển thị dạng lưới 3 cột; thứ bậc nội dung và các vùng chính nhìn thấy được trong ảnh toàn trang.
 - Ở mobile 390 × 844 px, ảnh chụp ghi nhận phần mô tả hero và ảnh đại diện bị cắt ở mép phải. Cần điều chỉnh cách co giãn các phần tử trong hero và kiểm thử lại trên thiết bị nhỏ; `overflow-x: hidden` có thể che thanh cuộn ngang mà không giải quyết phần nội dung bị khuất.
-- Nội dung giao diện trộn tiếng Việt và tiếng Anh (đặc biệt phần Liên hệ); nên thống nhất ngôn ngữ trước khi phát hành.
+- Nội dung giao diện trộn tiếng Việt và tiếng Anh (đặc biệt phần “Contact Us”, nhãn và nút trong biểu mẫu); nên thống nhất ngôn ngữ trước khi phát hành.
 
 **Minh chứng:** [Ảnh desktop](screenshots/01-desktop.png), [ảnh mobile thể hiện vấn đề](screenshots/02-mobile.png).
 
